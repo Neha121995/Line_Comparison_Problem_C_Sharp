@@ -46,11 +46,11 @@ namespace LineComparisionComputationProgram
             double Lenth_of_Second_Line = lineobject.Lenth_of_Line;
             Console.WriteLine("The second line length is :" + Lenth_of_Second_Line);
 
-            if (Lenth_of_First_Line == Lenth_of_Second_Line)
+            if (Lenth_of_First_Line.CompareTo(Lenth_of_Second_Line) == 0)
             {
                 Console.WriteLine("The Two lines Are Equals");
             }
-            else if (Lenth_of_First_Line > Lenth_of_Second_Line)
+            else if (Lenth_of_First_Line.CompareTo(Lenth_of_Second_Line) > 0)
             {
                 Console.WriteLine("The first line is grether than Second line");
             }
